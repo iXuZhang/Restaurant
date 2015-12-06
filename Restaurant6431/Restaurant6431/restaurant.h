@@ -41,6 +41,7 @@ struct Diner {
 struct Cook
 {
     int number;
+    
 };
 
 extern int
