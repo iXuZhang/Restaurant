@@ -15,24 +15,4 @@
 #include<pthread.h>
 #include<unistd.h>
 
-extern int
-number_of_diners,
-number_of_tables,
-number_of_cooks,
-available_diners,
-available_tables,
-available_cooks;
-
-extern pthread_mutex_t
-mutex_diners,
-mutex_tables,
-mutex_cooks,
-mutex_burgers,
-mutex_fries,
-mutex_cokes,
-mutex_sundaes;
-
-// read info from a file
-void file_read(char *filename);
-
 #endif /* common_h */

@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E779659F1C1399C700A85A13 /* cook.c in Sources */ = {isa = PBXBuildFile; fileRef = E779659A1C1399C700A85A13 /* cook.c */; };
 		E77965A11C1399C700A85A13 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E779659E1C1399C700A85A13 /* main.c */; };
-		E77965A61C139E0200A85A13 /* diner.c in Sources */ = {isa = PBXBuildFile; fileRef = E77965A41C139E0200A85A13 /* diner.c */; };
-		E77965A81C13A03600A85A13 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = E77965A71C13A03600A85A13 /* common.c */; };
+		E784D1091C148B8D00EC2F8F /* restaurant.c in Sources */ = {isa = PBXBuildFile; fileRef = E784D1071C148B8D00EC2F8F /* restaurant.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,12 +26,9 @@
 /* Begin PBXFileReference section */
 		E75A016C1C1377CF00CBBCB4 /* Restaurant6431 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Restaurant6431; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77965991C1399C700A85A13 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
-		E779659A1C1399C700A85A13 /* cook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cook.c; sourceTree = "<group>"; };
-		E779659B1C1399C700A85A13 /* cook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cook.h; sourceTree = "<group>"; };
 		E779659E1C1399C700A85A13 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		E77965A41C139E0200A85A13 /* diner.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = diner.c; sourceTree = "<group>"; };
-		E77965A51C139E0200A85A13 /* diner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = diner.h; sourceTree = "<group>"; };
-		E77965A71C13A03600A85A13 /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
+		E784D1071C148B8D00EC2F8F /* restaurant.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = restaurant.c; sourceTree = "<group>"; };
+		E784D1081C148B8D00EC2F8F /* restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = restaurant.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +61,10 @@
 		E75A016E1C1377CF00CBBCB4 /* Restaurant6431 */ = {
 			isa = PBXGroup;
 			children = (
-				E77965A41C139E0200A85A13 /* diner.c */,
-				E77965A51C139E0200A85A13 /* diner.h */,
 				E77965991C1399C700A85A13 /* common.h */,
-				E77965A71C13A03600A85A13 /* common.c */,
-				E779659A1C1399C700A85A13 /* cook.c */,
-				E779659B1C1399C700A85A13 /* cook.h */,
 				E779659E1C1399C700A85A13 /* main.c */,
+				E784D1071C148B8D00EC2F8F /* restaurant.c */,
+				E784D1081C148B8D00EC2F8F /* restaurant.h */,
 			);
 			path = Restaurant6431;
 			sourceTree = "<group>";
@@ -133,9 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E77965A61C139E0200A85A13 /* diner.c in Sources */,
-				E779659F1C1399C700A85A13 /* cook.c in Sources */,
-				E77965A81C13A03600A85A13 /* common.c in Sources */,
+				E784D1091C148B8D00EC2F8F /* restaurant.c in Sources */,
 				E77965A11C1399C700A85A13 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,20 +6,19 @@
 //
 
 #include "common.h"
-#include "diner.h"
-#include "cook.h"
+#include "restaurant.h"
 
 int main(int argc, const char * argv[]) {
-    printf("%s\n",argv[1]);
-    FILE *fp;
-    char buff[255];
-    fp = fopen("data.txt", "r");
-    fscanf(fp, "%s", buff);
-    printf("1 : %s\n", buff );
-    fclose(fp);
+    diner_read(argv[1]);
     
-    //file_read(argv[1]);
-    struct Diner diners[number_of_diners];
-    struct Cook cooks[number_of_cooks];
+    for(int i = 0; i < number_of_diners; i++){
+        printf("%d\t", diners[i].in_time);
+        printf("%d\t", diners[i].number_of_burgers);
+        printf("%d\t", diners[i].number_of_fries);
+        printf("%d\t", diners[i].number_of_cokes);
+        printf("%d\t\n", diners[i].number_of_sundaes);
+    }
+    printf("*************************************************************\n");
+    printf("Bye and have a nice day! $_$ \n");
     return 0;
 }
