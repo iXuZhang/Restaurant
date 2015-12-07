@@ -15,4 +15,6 @@
 #include<pthread.h>
 #include<unistd.h>
 
+#define max(a,b) ((a) > (b) ? a : b)
+
 #endif /* common_h */

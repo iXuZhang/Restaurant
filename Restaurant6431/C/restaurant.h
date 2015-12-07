@@ -18,30 +18,31 @@
 #define max_fries 100
 
 struct Diner {
+    int id_of_diner;
     int in_time;
-    int out_time;
     int number_of_burgers;
     int number_of_fries;
     int number_of_cokes;
     int number_of_sundaes;
-    int isWaitingForCook;
-    int isWaitingForDiner;
-    int food_served_time;
     
-    int assigned_number_cook;
-    int assigned_number_table;
-    int assigned_time_cook;
+    int isWaitingForTable;
+    int isWaitingForCook;
+    
+    int assigned_id_table;
+    int assigned_id_cook;
     int assigned_time_table;
+    int assigned_time_cook;
     int assigned_time_burgers;
     int assigned_time_fries;
     int assigned_time_cokes;
     int assigned_time_sundaes;
+    int served_time_food;
 };
 
-struct Cook
-{
-    int number;
-    
+struct Cook {
+    int id_of_cook;
+    int id_of_diner;
+    int isAssigned;
 };
 
 extern int
@@ -64,8 +65,15 @@ mutex_sundaes;
 extern struct Diner diners[max_diners];
 extern struct Cook cooks[max_cooks];
 
-//  read diner info from a file
-void diner_read(const char *filename);
+//  read restaurant info from a file
+void restaurant_scan(const char *filename);
+//  print restaurant info
+void restaurant_print();
+//  threads initialization and process
+void restaurant_process();
+
+void dinerProcess(void *arg);
+void cookProcess(void *arg);
 
 
 #endif /* restaurant_h */
