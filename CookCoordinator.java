@@ -1,12 +1,12 @@
 
-class CookMonitor {
+class CookCoordinator {
 
-  private int cooksAvailable;
-  private int maxCooks;
   private Cook[] cookObj;
   private int[] cooksBitMap;
+  private int cooksAvailable;
+  private int maxCooks;
 
-  public CookMonitor(Cook[] cookThread, int cooks) {
+  public CookCoordinator(Cook[] cookThread, int cooks) {
     this.cooksAvailable = cooks;
     this.maxCooks = cooks;
     cookObj = new Cook[cooks];
@@ -18,7 +18,7 @@ class CookMonitor {
       cooksBitMap[i] = 0;
     }
   }
-
+  
   synchronized Cook getCook(){
     while(cooksAvailable==0){
       try{
@@ -27,7 +27,6 @@ class CookMonitor {
         e.printStackTrace();
       }
     }
-
     int index=-1;
     for(int i=0;i<maxCooks;i++){
       if(cooksBitMap[i]==0){
